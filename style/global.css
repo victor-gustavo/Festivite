@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    /*cores*/
+
+    --brand-light: #59B2FF;
+    --brand-mid: #348FCF;
+    --brand-dark: #1D6FB6;
+
+    --danger: #FF5959;
+
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+
+    --shape-background: #1C1F21;
+    --shape-body: #363B40;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+
+    /*fontes*/
+
+    --font-leckerli: 'Leckerli One', sans-serif;
+    --text-logo: 400 2.5rem var(--font-leckerli);
+
+    --font-baloo2: 'Baloo 2', sans-serif;
+    --heading-md: 600 1.75rem var(--font-baloo2);
+    --heading-sm: 600 1.125rem var(--font-baloo2);
+
+    --font-open-sans: 'Open Sans', sans-serif;
+    --body-md: 400 1rem var(--font-open-sans);
+    --body-sm: 400 .875rem var(--font-open-sans);
+    --body-xs: 400 .75 var(--font-open-sans)
+
+
+
+
+}
+body{
+    font: var(--body-md);
+}
