@@ -1,0 +1,23 @@
+form{
+    display: grid;
+    margin-top: 2.5rem;
+}
+legend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .25rem;
+}
+fieldset{
+    margin-bottom: 2.5rem;
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+}
+.flex{
+    display: flex;
+    gap: .5rem;
+}
+.flex-1{
+    flex: 1;
+}

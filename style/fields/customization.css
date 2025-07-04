@@ -1,0 +1,201 @@
+.color-wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+    gap: .5rem;
+
+     & .radio-inner{
+        position: relative;
+
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: var(--input-stroke);
+        border-radius: 50%;
+        align-content: center;
+        justify-items: center;
+        
+        &:has(:checked), &:hover, &:focus{
+            border: 1px solid var(--brand-light);
+        }
+
+        & input{
+            border-radius: 0;
+            border-radius: 50%;
+            inset: 0;
+            position: absolute;
+            opacity: 0;
+        }
+
+        & .color-main{
+            position: relative;
+            height: 1.75rem;
+            width: 1.75rem;
+            border-radius: 50%;
+        }
+        
+        & .blue-color{
+            background-color: var(--brand-light);
+        }
+
+        & .purple{
+            background-color: #6A59FF;
+        }
+
+        & .violet-color{
+            background-color: #B259FF;
+        }
+
+        & .fuschia-color{
+            background-color: #FF59F9;
+        }
+
+        & .pink-color{
+            background-color: #FF598B;
+        }
+
+        & .red-color{
+            background-color: #FF5959;
+        }
+        
+        & .orange-color{
+            background-color: #FF8B59;
+        }
+
+        & .yellow-color{
+            background-color: #FFCD59;
+        }
+
+        & .lime-color{
+            background-color: #E1FF59;
+        }
+
+        & .green-color{
+            background-color: #59FF91;
+        }
+    }
+}
+.theme-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap: 1rem;
+
+    
+
+    & .radio-inner{
+        display: flex;
+        position: relative;
+        height: 6.437rem;
+        width: 8.375rem;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--input-stroke);
+        border-radius: .5rem;
+
+        &:has(:checked){
+            border: 1px solid var(--brand-light);
+        }
+
+        & span{
+            position: absolute;
+            top: 72%;
+        }
+        & input{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+
+        }
+
+        &:has(:checked){
+            border: 1px solid var(--brand-light);
+        }
+
+
+        & .img-theme{
+            position: absolute;
+            width: 7.875rem;
+            height: 4rem;
+            top: 5%;
+            border-radius: .5rem;
+        }
+
+        & .birthday{
+            background-image: url(../../assets/birthday.jpg);
+        }
+
+        & .kids{
+            background-image: url(../../assets/kids.jpg);
+        }
+
+        & .graduation{
+            background-image: url(../../assets/graduation.jpg);
+        }
+
+        & .wedding{
+            background-image: url(../../assets/wedding.jpg);
+        }
+
+        & .baby-shower{
+            background-image: url(../../assets/baby.png);
+        }
+
+        & .pan-shower{
+            background-image: url(../../assets/pan.jpg);
+        }
+
+        & .carnival{
+            background-image: url(../../assets/carnival.jpg);
+        }
+
+        & .easter{
+            background-image: url(../../assets/easter.jpg);
+        }
+
+        & .st-joao{
+            background-image: url(../../assets/st-joao.png);
+        }
+
+        & .hallowen{
+            background-image: url(../../assets/hallowen.jpg);
+        }
+
+        & .christmas{
+            background-image: url(../../assets/christmas.jpg);
+        }
+
+        & .another{
+            background-image: url(../../assets/another.png);
+        }
+    }
+}
+
+.flex{
+    align-items: center;
+    gap: 1re;
+.file-photo{
+    display: flex;
+    position: relative;
+    width: 9.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--input-stroke);
+    gap: .5rem;
+    border-radius: .5rem;
+
+    & input{
+        position: absolute;
+        opacity: 0;
+        inset: 0
+    }
+
+    & .img-file{
+        background: url(../../assets/icons/upload.svg)center/contain, no-repeat;
+        height: 1rem;
+        width: 1rem;
+    }
+    &:has(:checked), &:hover, &:focus-within{
+        border: 1px solid var(--brand-light);
+    }
+}
+}
+   

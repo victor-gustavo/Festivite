@@ -1,0 +1,68 @@
+#app{
+    display: grid;
+    grid-template-columns: 38% 62%;
+    overflow: hidden;
+    padding: 2rem ;
+    gap: 1rem;
+
+
+}
+aside{
+
+    & .aside-container{
+        margin-left: auto;
+        max-width: 25rem;
+        position: relative;
+
+        & .bg-image{
+            position: absolute;
+            
+            & img{
+                height: 100%;
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+        
+        & .logo{
+            display: grid;
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+                
+            & .image-logo{
+                margin-bottom: .5rem;
+                    
+                & img{
+                    height: 2.5rem;
+                    width: auto;
+                    }
+            }
+        
+            & .aside-tittle{
+                display: grid;
+                gap: .25rem;
+
+                & h1{
+                    font: var(--text-logo);
+                    color: #FF598B;
+                }
+                
+            }
+        }
+    }
+
+    
+}
+main{
+
+    
+    & .main-container{
+    overflow: auto;
+        background-color: var(--shape-body);
+        max-width: 50rem;
+        height: 100vh;
+        padding: 6rem;
+        border-radius: 1rem;
+    }
+}

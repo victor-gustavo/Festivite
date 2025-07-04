@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     /*cores*/
 
@@ -17,8 +23,8 @@
     --input-stroke: #363B40;
     --input-placeholder: #869198;
 
-    --shape-background: #1C1F21;
-    --shape-body: #363B40;
+    --shape-background: #131516;
+    --shape-body: #212427;
     --shape-button: #2D3136;
     --shape-hover: #383D42;
 
@@ -27,22 +33,46 @@
 
     /*fontes*/
 
-    --font-leckerli: 'Leckerli One', sans-serif;
-    --text-logo: 400 2.5rem var(--font-leckerli);
+    --font-leckerli:'Leckerli One', sans-serif;
+    --text-logo: 400 2rem var(--font-leckerli);
 
     --font-baloo2: 'Baloo 2', sans-serif;
-    --heading-md: 600 1.75rem var(--font-baloo2);
-    --heading-sm: 600 1.125rem var(--font-baloo2);
+    --heading-md: bold 1.75rem var(--font-baloo2);
+    --heading-sm: 00 1.125rem var(--font-baloo2);
 
     --font-open-sans: 'Open Sans', sans-serif;
     --body-md: 400 1rem var(--font-open-sans);
     --body-sm: 400 .875rem var(--font-open-sans);
-    --body-xs: 400 .75 var(--font-open-sans)
-
-
-
+    --body-xs: 400 .75 var(--font-open-sans);
 
 }
 body{
     font: var(--body-md);
+    color: var(--text-body);
+    overflow: hidden;
+    background-color: var(--shape-background);
+    height: 100vh;
+    
 }
+
+img{
+    max-width: 100%;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+h1, legend {
+    color: var(--text-heading);
+    font: var(--heading-md);
+
+    
+}
+legend {
+        color: var(--text-heading); 
+        font: var(--heading-sm)
+}
+label{
+    color: #FFFFFF; 
+        font: var(--body-md)
+}
+
+
