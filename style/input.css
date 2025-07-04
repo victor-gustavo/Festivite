@@ -8,7 +8,7 @@ input, textarea{
     color: var(--text-body);
     font: var(--body-md);
 
-    &:hover, &:focus-within{
+    &:hover, &:has:focus-within{
         border: 1px solid var(--brand-light);
     }
 }
