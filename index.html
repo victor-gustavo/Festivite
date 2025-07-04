@@ -238,8 +238,66 @@
                         </fielset>
 
                         <fieldset class="contact-information">
-                            <legend></legend>
+                            <legend>
+                                <img src="assets/icons/contact.svg" alt="">
+                                <span>Dados para contato</span>
+                            </legend>
+
+                            <div class="input-wrapper">
+                                <label for="">Nome</label>
+                                <input type="text" name="contact-information" id="name">
+                                <div class="error">
+                                    <div class="img-error"></div>
+                                    <span>Campo obrigatório</span>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="input-wrapper flex-1">
+                                    <label for="">Email</label>
+                                    <input type="email" name="contact-information" id="email">
+                                </div>
+
+                                <div class="input-wrapper flex-1">
+                                    <label for="">Telefone</label>
+                                    <input type="tel" name="contact-information" id="telephone">
+                                </div>
+                            </div>
                         </fieldset>
+
+                        <div class="check-terms">
+
+                            <div class="check">
+                                <div class="box-check">
+                                    <div class="img-checked"></div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <span>Li e concordo com os <a href="#">Termos e condições</a> e com a <a href="#">Politica de privacidade</a></span>
+                            </div>
+
+                            <div class="check">
+                                <div class="box-check">
+                                    <div class="img-checked"></div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <span>Aceito receber atualizações e promoções por email</span>
+                            </div>
+
+                            <div class="check">
+                                <div class="box-check">
+                                    <div class="img-checked"></div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <span>Aceito receber atualizações e promoções por email</span>
+                            </div>
+                        </div>
+
+                        <div class="submition-form">
+                            <button type="submit">
+                                <img src="assets/icons/ticket.svg" alt="">
+                                <span>Enviar convite</span>
+                            </button>
+                        </div>
                 </form>
             </div>
         </main>

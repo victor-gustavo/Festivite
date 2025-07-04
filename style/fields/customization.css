@@ -171,21 +171,21 @@
 .flex{
     align-items: center;
     gap: 1re;
-.file-photo{
-    display: flex;
-    position: relative;
-    width: 9.5rem;
-    height: 2.5rem;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--input-stroke);
-    gap: .5rem;
-    border-radius: .5rem;
+    .file-photo{
+        display: flex;
+        position: relative;
+        width: 9.5rem;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--input-stroke);
+        gap: .5rem;
+        border-radius: .5rem;
 
     & input{
         position: absolute;
         opacity: 0;
-        inset: 0
+        inset: 0;
     }
 
     & .img-file{
