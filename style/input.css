@@ -8,7 +8,7 @@ input, textarea{
     color: var(--text-body);
     font: var(--body-md);
 
-    &:hover, &:focus-within{
+    &:hover, &:has:focus-within{
         border: 1px solid var(--brand-light);
     }
 }
@@ -35,10 +35,4 @@ input[type="date"]{
         transform: translateY(-50%);
     }
 }
-.textarea-wrapper{
-    textarea{
-        margin-top: .25rem;
-    }
-}
 
-                                 
