@@ -54,17 +54,19 @@
 
                                 <div class="flex">
                                     
-                                    <div class="input-wrapper flex-1">
+                                    <div class="input-wrapper flex-1 margin0">
                                         <label for="type-event">Tipo</label>
                                         
                                         <div class="radio-wrapper">
 
                                             <div class="radio-inner flex">
-                                                <img src="assets/icons/building-2.svg"alt="">                         <label>Presencial</label>
+                                                <div class="img-presenc">   
+                                                </div>                         <label>Presencial</label>
                                                 <input type="radio" name="type-event" id="presenc">
                                             </div>
                                             <div class="radio-inner flex">
-                                                <img src="assets/icons/video.svg" alt="">
+                                                <div class="img-online">   
+                                                </div> 
                                                 <label>Online</label>
                                                 <input type="radio" name="type-event" id="online">
                                             </div>
@@ -80,16 +82,19 @@
 
                                 <div class="textarea-wrapper">
                                     <label for="description-event">Descrição<label>
-                                        <textarea name="description-event" id="description-event" cols="30" rows="7"></textarea>
+                                    <textarea name="description-event" id="description-event" cols="30" rows="7"></textarea>
                                 </div>
                             
                         </fieldset>
                         
                         <fielset class="customization">
-                            <legend>Personalização</legend>
+                            <legend>
+                                <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                                <span>Personalização</span>
+                            </legend>
 
-                            <div class="main-color">
-                                <label>Cor principal</label>
+                            <div class="main-color margin">
+                                <label class="margin1">Cor principal</label>
 
                                 <div class="color-wrapper">
                                     <div class="radio-inner blue-color">
@@ -142,8 +147,8 @@
                                 </div>
                             </div>
 
-                            <div class="event-theme">
-                                <label>Tema do evento</label>
+                            <div class="event-theme margin">
+                                <label class="margin1">Tema do evento</label>
 
                                 <div class="theme-wrapper">
                                     <div class="radio-inner">
@@ -220,8 +225,8 @@
                                 </div>
                             </div>
 
-                            <div class="cover-photo">
-                                <label>Foto de capa</label>
+                            <div class="cover-photo margin">
+                                <label class="margin1">Foto de capa</label>
                                     
                                 <div class="flex">
                                     <div class="file-photo">
@@ -245,7 +250,7 @@
 
                             <div class="input-wrapper">
                                 <label for="">Nome</label>
-                                <input type="text" name="contact-information" id="name">
+                                <input type="text" name="contact-information" id="name" required>
                                 <div class="error">
                                     <div class="img-error"></div>
                                     <span>Campo obrigatório</span>

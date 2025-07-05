@@ -58,11 +58,42 @@ main{
 
     
     & .main-container{
-    overflow: auto;
+        overflow: auto;
         background-color: var(--shape-body);
         max-width: 50rem;
         height: 100vh;
         padding: 6rem;
         border-radius: 1rem;
+    }
+}
+input{
+    &:invalid{
+        border: 1px solid var(--danger);
+    }
+
+    &:invalid + .error{
+        color: var(--danger);
+
+        & .img-error{
+            background: url(../assets/icons/circle-alert2.svg)center/contain, no-repeat;
+            height: 1.5rem;
+            width: 1.5rem;
+            }
+    }
+    & + .error{
+        gap: .25rem;
+        display: flex;
+        align-items: center;
+        margin-top:.25rem;
+        
+        & .img-error{
+            background: url(../assets/icons/circle-alert.svg)center/contain, no-repeat;
+            height: 1.5rem;
+            width: 1.5rem;
+            }
+    }
+
+    &:not(:focus):valid + .error{
+        display: none;
     }
 }

@@ -67,12 +67,19 @@ h1, legend {
     
 }
 legend {
-        color: var(--text-heading); 
-        font: var(--heading-sm)
+    color: var(--text-heading); 
+    font: var(--heading-sm)
 }
 label{
     color: #FFFFFF; 
-    font: var(--body-md)
+    font: var(--body-md);
 }
+.margin{
+    margin-top: 1.5rem;
+}
+.margin1{
+    margin-bottom: 1rem;
+}
+
 
 

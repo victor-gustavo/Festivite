@@ -1,11 +1,10 @@
 form{
     display: grid;
-    margin-top: 2.5rem;
 }
 legend{
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     gap: .25rem;
 }
 fieldset{
@@ -20,4 +19,8 @@ fieldset{
 }
 .flex-1{
     flex: 1;
+}
+
+fieldset{
+    margin-top: 3rem;
 }
